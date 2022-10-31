@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>balloon</title>
+    <style>
+        body {
+            justify-content: center;
+            display: flex;
+
+        }
+
+        .Krthamma-balloon {
+            margin: 10rem;
+            border-radius: 50%;
+            background-color: red;
+            width: 200px;
+            height: 200px;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="Krthamma-balloon" id="balloon" onclick="Click();" onmouseleave="mouseLeave();"></div>
+
+
+    <script>
+        let index = 0;
+        const colors = ['red', 'green', 'blue'];
+        function Click() {
+            let balloon = document.getElementById("balloon");
+            if (balloon.style.height >= "430px") {
+                balloon.style.height = "200px"
+                balloon.style.width = "200px"
+            } else {
+                balloon.style.width = (balloon.offsetWidth + 10) + "px";
+                balloon.style.height = (balloon.offsetHeight + 10) + "px";
+            }
+            changeColorPlus();
+            balloon.style.backgroundColor = colors[index];
+            console.log("Num: " + index)
+        }
+        function mouseLeave() {
+            let balloon = document.getElementById("balloon");
+            if (balloon.style.height <= "200px") {
+                balloon.style.height = "200px"
+                balloon.style.width = "200px"
+            } else {
+                balloon.style.width = (balloon.offsetWidth - 5) + "px";
+                balloon.style.height = (balloon.offsetHeight - 5) + "px";
+            }
+            changeColorMinus()
+            balloon.style.backgroundColor = colors[index];
+            console.log("Num: " + index)
+        }
+        function changeColorPlus() {
+            if (index < colors.length - 1 || index == 0) {
+                index+=1;
+            }
+            else if (index == colors.length - 1) {
+                index = 0;
+            }
+        }
+        function changeColorMinus() {
+            if (index == index && index !=0) {
+                index-=1;
+            }
+            else if (index == 0 ) {
+                index = 2;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

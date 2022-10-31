@@ -1,0 +1,40 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+.black-color {
+    background-color: black;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.bg-img {
+    background-image: url(https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/10/28/1446051664376/The-late-Steve-Jobs-Apple-009.jpg?width=700&quality=85&auto=format&fit=max&s=37db04ad05ff8755e41cd4482b4599d5);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+h1 {
+    color: white;
+}
+.bg2-img {
+    background-image: url(https://image.cnbcfm.com/api/v1/image/100496736-steve-jobs-march-2011-getty.jpg?v=1617291443&w=1920&h=1080);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

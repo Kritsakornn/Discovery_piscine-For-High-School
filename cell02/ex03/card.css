@@ -1,0 +1,47 @@
+body {
+    font-family: monospace;
+    font-size: 20px;
+    background-color: wheat;
+}
+.header {
+    text-align: center;
+}
+.card {
+    max-width: 450px;
+    margin: auto;
+    box-shadow: 10px 8px rgb(63, 60, 60);
+    text-align: center;
+    background-color: antiquewhite;
+    
+}
+.name {
+    font-size: 40px;
+}
+.title {
+    font-size: 20px;
+}
+.picture {
+    width: 100%;
+    height: 100%;
+}
+.link-contact {
+    margin: 20px;
+    font-size: 40px;
+}
+.contact {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 20px;
+    color: black;
+    background-color: hotpink;
+    text-align: center;
+    cursor: pointer;
+    width: 91.5%;
+    font-size: 30px;
+    font-family: monospace;
+    text-decoration: none;
+}
+.contact:hover, a:hover {
+    opacity: 0.7;
+}
